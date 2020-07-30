@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin:0;
+  padding:0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family:'montseratt',sans-serif;
+}
+.App{
+  background-image: url('./assets/moun1.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position:center;
+  transition:0.4 ease-out;
+  max-height:650px;
+  min-height:100vh;
+}
+.App.warm{
+  background-image: url('./assets/hot.jpg');
+}
+.search-box{
+  width:20%;
+  margin-left:40%;
+}
+.search-box .search-bar{
+  display:block;
+  width:100%;
+  padding:5px;
+  border:none;
+  outline:none;
+  border-radius: 3px;
+}
+.location-box
+{
+  width:300px;
+  text-align:center;
+  border-radius:16px;
+  margin:10px auto;
+  padding:15px 25px;
+  color:white;
+  font-size: 20px;
+  font-weight: 700;  
+}
+.weather-box{
+  width:180px;
+  text-align:center;
+  margin-top:20px;
+  background-color: rgba(255,255,255,0.4);
+  border-radius:16px;
+  margin:10px auto;
+  padding:15px 0px;
+  color:white;
+  font-size: 40px;
+  font-weight: 700;  
 }
