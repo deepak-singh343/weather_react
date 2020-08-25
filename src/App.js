@@ -7,9 +7,7 @@ const api={
 function App() {
   const [query,setquery]=useState('');
   const [weather,setweather]=useState({});
-  const search=event=>{
-    if(event.key==='Enter')
-    {
+  const search=()=>{
       fetch(`${api.base}current?access_key=${api.key}&query=${query}`)
       .then(res=>res.json())
       .then(result=>{
@@ -17,14 +15,13 @@ function App() {
         setquery('');
       });
     }
-  }
   return (
     <div className={(typeof weather.current!='undefined')?((weather.current.temperature>28)?'App warm':'App'):'App'}>
       
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="Search..."
-            onChange={e=>setquery(e.target.value)} value={query} onKeyPress={search}>
-          </input>
+            onChange={e=>setquery(e.target.value)} value={query}/>
+            <button onClick={search} id='search-btn'>Search</button>
         </div>
         {(typeof weather.current!='undefined')?(
           <div>

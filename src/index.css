@@ -22,6 +22,15 @@ body{
 .search-box{
   width:20%;
   margin-left:40%;
+  display: flex;
+}
+button#search-btn {
+  margin-left: 4px;
+  border: none;
+  background-color: cyan;
+  color: white;
+  outline: none;
+  padding: 5px;
 }
 .search-box .search-bar{
   display:block;
