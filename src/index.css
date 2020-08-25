@@ -6,16 +6,18 @@ body{
   font-family:'montseratt',sans-serif;
 }
 .App{
-  background-image: url('./assets/moun1.jpg');
+  background-image: url('./assets/night.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position:center;
   transition:0.4 ease-out;
   max-height:650px;
   min-height:100vh;
+  background-color:black;
+  
 }
 .App.warm{
-  background-image: url('./assets/hot.jpg');
+  background-image: url('./assets/hot1.jpg');
 }
 .search-box{
   width:20%;

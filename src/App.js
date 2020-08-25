@@ -19,7 +19,7 @@ function App() {
     }
   }
   return (
-    <div className={(typeof weather.current!='undefined')?((weather.current.temperature>30)?'App warm':'App'):'App'}>
+    <div className={(typeof weather.current!='undefined')?((weather.current.temperature>28)?'App warm':'App'):'App'}>
       
         <div className="search-box">
           <input type="text" className="search-bar" placeholder="Search..."
@@ -30,7 +30,7 @@ function App() {
           <div>
               <div className="location-box">
                   <div className="location">
-                        {weather.location.name}
+                        {weather.location.name}, {weather.location.country}
                   </div>
                   <div className="date">
                       {new Date().toDateString()}
